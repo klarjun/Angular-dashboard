@@ -94,8 +94,9 @@ export class SocialNetworkGraphComponent implements OnInit {
       .attr('r', (d: any) => {
         if (d.group >= 1780) {
           return 15;
-        } else
-          return 6
+        } else {
+          return 6;
+        }
       })
       .style('fill', (d: any) => {
         if (d.group >= 1780) {
@@ -174,8 +175,9 @@ export class SocialNetworkGraphComponent implements OnInit {
         .attr('r', (d: any) => {
           if (d.group >= 1780) {
             return 15;
-          } else
-            return 6
+          } else {
+            return 6;
+          }
         })
         .style('fill', (d) => {
           return nodeColor(d.group);

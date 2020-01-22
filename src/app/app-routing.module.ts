@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DefaultComponent } from './layouts/default/default.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { PostsComponent } from './modules/posts/posts.component';
+import { SocialNetworkGraphComponent } from './modules/graphs/social-network-graph/social-network-graph.component';
 
 const routes: Routes = [{
   path: '',
@@ -13,7 +14,12 @@ const routes: Routes = [{
   }, {
     path: 'posts',
     component: PostsComponent
-  }]
+  },
+  {
+    path: 'graphs/social-network',
+    component: SocialNetworkGraphComponent
+  }
+]
 }];
 
 @NgModule({
